@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
+/*메인슬라이더*/
+ 
+.mainSlider{}
+.mainSlider img{
+    width: 100%;
+}
+
+/*maincon01*/
+.mainCon01{
+    text-align: center;
+    margin-top: 10%;
+}
+.boxTxt{
+    
+    
+}
+.boxTxt img{
+    width: 170px;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/*maincon02*/
+
+.mainCon02{
+    
+    padding: 5%;
+    padding-top: 30%;
+    padding-bottom: 15%;
+}
+.con02List{position: relative;}
+.con02List a{display: flex;}
+.con02List a>div{ width: 50%;}
+con03List:nth-child(2n) a{
+    flex-direction:row-reverse;
+}
+.con02Txt{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.con02Txt p{
+    writing-mode: vertical-rl;
+    
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+.con02Img{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    
+}
+.con02Img img{
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+/*slick*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+  border: none;
+}
+
+.slide {
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.panel {
+  width: 400%;
+}
+
+.panel:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.panel>li {
+  width: 25%;
+  
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+
+
+.dot:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dot {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.dot>li {
+  float: left;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+.dot>li.on {
+  background-color: #342f2f;
+}
+/*mainCon03*/
+.mainCon03{
+    
+}
+.con03Box{
+    width: 2px;
+    height: 20px;
+    background: black;
+    vertical-align: middle;
+    display: inline-block;
+    margin:10px;
+}
+.mainCon03 h3{
+    font-family: "NotoSans";
+    font-weight: 400;
+    vertical-align:middle;
+     display: inline-block;
+    font-size: 17px;
+}
+.moreBtn{
+     
+    
+    position: absolute;    
+    top:59px;
+    right: 5px;
+    z-index: 1;
+}
+.moreBtn a{}
+.moreBtn a img{
+    width: 20px;
+}
+.con03Img{
+    padding-top: 5%;
+    position: relative;
+}
+.con03Img li{}
+.con03Img li img{
+    width: 100%;
+    padding-bottom: 10%;
+    
+}
+.con03Img li p{
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top:20%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height: 25px;
+    font-family: "NotoSans";
+    font-weight: 100;
+}
+
+/*con04*/
+.mainCon04{
+    position: relative;
+    
+}
+.mainCon04 h3 {
+    float: right;
+    vertical-align: middle;
+}
+.moreBtn2{
+    float: left;
+    margin-left: 5px;
+
+}
+.moreBtn2 a{}
+.moreBtn2 a img{
+    width: 20px;
+}
+
+.mainCon04 h3{
+    font-family: "NotoSans";
+    font-weight: 400;
+    vertical-align:middle;
+     display: inline-block;
+       margin-right: 10px;
+    font-size: 17px;
+}
+.mainCon04 h3::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background: black;
+    vertical-align: top;
+    margin-right:10px;
+}
+
+.con04In{
+    padding: 10% 0;
+}
+.con04List{}
+.con04List a{
+    display: flex;  
+}
+.con04List a>div{
+    width: 50%;
+}
+.con04List:nth-child(2n) a{     
+     flex-direction:row-reverse;
+}
+.con04Img{
+    position: relative;
+}
+.con04Img img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.con04Txt{
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;  
+}
+
+.con04Txt p{
+    font-size: 11px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-family: "NotoSans";
+    z-index: 10;
+    
+}
+
+.con04Txt img{
+    position: absolute;
+    width: 15%;
+    top:10px;
+    z-index: -1;
+}
+
+.mainCon05{
+    position: relative;
+    height: 25px;
+    margin: 30px 0;
+   
+}
+.con05Box{
+    width: 2px;
+    height: 30px;
+    background: black;
+    margin: 0 auto;
+    
+    
+
+}
+.rBtn{
+    
+    border-radius: 30px 30px 30px 30px;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: linear-gradient(to right, #A52D43, #52131A);
+    
+}
+.rBtn a{
+    
+}
+.rBtn p{
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "NotoSans";
+    color: #fff;
+}
